@@ -1,0 +1,185 @@
+.TODO {
+grid for skills and rt align section name
+use :before content: to get left section divs
+publications text align
+mobile formatting
+
+}
+
+body {
+	font-family: Bookman, URW Bookman, serif;
+	width: 80%;
+	background-color: #fbd9b6;
+}
+
+
+.name {
+	font-size: 1.2em;
+}
+
+
+.resumeGrid {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	grid-row-gap: 0.5em;
+	grid-column-gap: 0.5em;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.sectionName {
+	font-size: 1.3em;
+	align-self: start;
+	padding: 0.8em;
+}
+.resumeGrid > div {
+	background-color: #f9fafd;
+	padding-left: 1em;
+	padding-right: 1em;
+	box-shadow: 2px 2px 2px #794006;
+	border-radius: 6px;
+}
+
+.resumeGrid > div > div:not(:last-child) {
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #794006;
+}
+
+.resumeGrid > div > div {
+  padding-top: 0.8em;
+}
+
+.headingText{
+	font-family: optima, sans-serif;
+	font-size: 1.2em;
+}
+
+.subHeading{
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.header {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+
+	display: grid;
+	grid-template-areas: "name name focus focus focus"
+						 "address address phone email email";
+	grid-template-rows: auto;
+	grid-template-columns: repeat(5, minmax(auto, 1fr));
+	padding-bottom: 0.4em;
+}
+
+div.header > div.name{
+	grid-area: name;
+	align-self: start;
+	border-bottom-style: solid;
+	border-width: medium;
+	align-self: stretch;
+	padding-bottom:0.2em;
+	font-size: 1.3em;
+}
+div.header > div.focus{
+	grid-area: focus;
+	align-self: end;	
+	text-align: right;
+	font-style: italic;
+	border-bottom-style: solid;
+	border-width: medium;
+	align-self: stretch;
+	padding-bottom:0.2em;
+}
+div.header > div.address {
+	grid-area: address;
+	border-bottom-style: none;
+}
+.header > .city {
+	grid-area: city;
+}
+.header > .state {
+	grid-area: state;
+}
+.header > .zip {
+	grid-area: zip;
+}
+div.header > div.phone {
+	grid-area: phone;
+	text-align: right;
+	border-bottom-style: none;
+}
+.header > .email {
+	grid-area: email;
+	text-align: right;
+}
+.resumeGrid > div.objective {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	font-style: italic;
+	padding-top:.5em;
+	padding-bottom:.5em;
+	width: 90%;
+	text-align: justify;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.school > .degree, .dates, .location {
+	font-style: italic;
+}
+
+.degree > .title, .major, .GPA {
+	display: inline-block;
+}
+.education > .details {
+}
+
+.position > .title, .dates {
+	display: inline-block;
+	font-style: italic;
+}
+
+.workplace > .description {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.skillset > div, ul {
+	display: inline-block;
+}
+
+.compact ul {
+	list-style: none;
+	display: inline-block;
+	text-align: left;
+}
+
+.compact li {
+	display: inline-block;
+}
+
+.compact li:after {
+	content: ", ";
+}
+
+.compact li:last-child:after {
+	content: "";
+}
+
+.honors ol {
+	list-style: none;
+	padding-left: 0;
+}
+
+.honors li {
+	padding-bottom: 0.5em;
+}
+
+
