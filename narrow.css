@@ -9,13 +9,10 @@ body {
 	font-size: 1.2em;
 }
 
-
 .resumeGrid {
 	display: grid;
-	grid-template-columns: 1fr 5fr;
+	grid-template-columns: auto;
 	grid-row-gap: 0.5em;
-	grid-column-gap: 0.5em;
-	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
 	
@@ -23,10 +20,10 @@ body {
 
 .resumeGrid > .sectionName {
 	font-size: 1.3em;
+  text-decoration: underline;
 	align-self: start;
 	padding: 0.8em;
-	text-align: right;
-
+	justify-self: start;
 }
 .resumeGrid > div {
 	background-color: #f9fafd;
@@ -60,59 +57,65 @@ body {
 }
 
 .resumeGrid > .header {
-	grid-column-start: 1;
-	grid-column-end: 3;
-	grid-row-start: 1;
-	grid-row-end: 2;
-
 	display: grid;
-	grid-template-areas: "name name focus focus focus"
-						 "address address phone email email";
+	grid-template-areas: "name"
+						 "focus"
+						 "address"
+						 "phone"
+						 "email";
 	grid-template-rows: auto;
-	grid-template-columns: repeat(5, minmax(auto, 1fr));
+	grid-row-gap: 0em;
 	padding-bottom: 0.4em;
 }
 
-div.header > div.name{
+.resumeGrid > div.header > div {
+	border-bottom-style: none;
+	padding-bottom: 0;
+	padding-top: 0;
+	padding-left: .3em;
+}
+
+.resumeGrid > div.header > div.name{
 	grid-area: name;
 	align-self: start;
+	align-self: stretch;
+	padding-bottom: 0;
+	font-size: 1.3em;
+	border-bottom-style: none;
 	border-bottom-style: solid;
 	border-width: medium;
-	align-self: stretch;
-	padding-bottom:0.2em;
-	font-size: 1.3em;
+	padding-top: 0.8em;
 }
-div.header > div.focus{
+
+.resumeGrid > div.header > div.focus{
 	grid-area: focus;
 	align-self: end;	
-	text-align: right;
 	font-style: italic;
-	border-bottom-style: solid;
-	border-width: medium;
+	
 	align-self: stretch;
+	font-size: 1em;
 	padding-bottom:0.2em;
+	padding-bottom: 0.8em;
 }
 div.header > div.address {
 	grid-area: address;
 	border-bottom-style: none;
 }
+
 div.header > div.phone {
 	grid-area: phone;
-	text-align: right;
 	border-bottom-style: none;
 }
 .header > .email {
 	grid-area: email;
-	text-align: right;
+	padding-bottom: 0.8em;
 }
+
 .resumeGrid > div.objective {
-	grid-column-start: 1;
-	grid-column-end: 3;
-	grid-row-start: 2;
-	grid-row-end: 3;
 	font-style: italic;
-	padding-top:.5em;
-	padding-bottom:.5em;
+	padding:.75em;
+	padding-left: 1em;
+	padding-right: 1em;
 	width: 90%;
 	text-align: justify;
 	margin-left: auto;
@@ -141,18 +144,24 @@ div.header > div.phone {
 
 .skills {
 	display: grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: auto;
 	grid-column-gap: 0;
 }
 
-.resumeGrid > .skills > div.separator {
-	border-bottom-style: solid;
-	border-bottom-width: 1px;
-	border-bottom-color: #794006;
+.resumeGrid > .skills > div {
+	border-bottom-style: none;
 }
 
-.resumeGrid > .skills > .name {
-	text-align: right;
+.resumeGrid > div.skills > div.skillset {
+	padding-top: 0;
+}
+
+.resumeGrid > div.skills > div.skillset:not(:last-child) {
+	border-bottom-style: solid;
+}
+.resumeGrid > .skills > div.separator {
+	padding: 0;
+	border-bottom-style: none;
 }
 
 .resumeGrid > div.skills > div {
@@ -180,6 +189,3 @@ div.header > div.phone {
 .compact li:last-child:after {
 	content: "";
 }
-
-
-
