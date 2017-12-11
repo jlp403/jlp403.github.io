@@ -21,8 +21,12 @@ body {
 	
 }
 
+.resumeGrid > div.header > div.name {
+	font-size: 1.4em;
+}
+
 .resumeGrid > .sectionName {
-	font-size: 1.3em;
+	font-size: 1.4em;
 	align-self: start;
 	padding: 0.8em;
 	text-align: right;
@@ -51,7 +55,7 @@ body {
 
 .headingText{
 	font-family: optima, sans-serif;
-	font-size: 1.2em;
+	font-size: 1.3em;
 }
 
 .subHeading{

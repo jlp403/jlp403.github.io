@@ -24,6 +24,11 @@ body {
 	padding: 0.8em;
 	justify-self: start;
 }
+
+.resumeGrid > div.header > div.name {
+	font-size: 1.4em;
+}
+
 .resumeGrid > div {
 	background-color: #f9fafd;
 	padding-left: 1em;
