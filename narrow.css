@@ -2,24 +2,25 @@ body {
 	font-family: Bookman, URW Bookman, serif;
 	width: 90%;
 	background-color: #fbd9b6;
+	font-size: 1.0em;
 }
 
 
 .name {
-	font-size: 1.2em;
+	font-size: 1.3em;
 }
 
 .resumeGrid {
 	display: grid;
 	grid-template-columns: auto;
-	grid-row-gap: 0.5em;
+	grid-row-gap: 0.75em;
 	margin-left: auto;
 	margin-right: auto;
 	
 }
 
 .resumeGrid > .sectionName {
-	font-size: 1.3em;
+	font-size: 1.4em;
 	align-self: start;
 	padding: 0.8em;
 	justify-self: start;
@@ -35,8 +36,8 @@ body {
 	padding-right: 1em;
 	box-shadow: 2px 2px 2px #794006;
 	border-radius: 6px;
-	padding-top: 0.25em;
-	padding-bottom: 0.25em;
+	padding-top: 0.375em;
+	padding-bottom: 0.375em;
 }
 
 .resumeGrid > div > div:not(:last-child) {
@@ -84,7 +85,7 @@ body {
 	align-self: start;
 	align-self: stretch;
 	padding-bottom: 0;
-	font-size: 1.3em;
+	font-size: 1.4em;
 	border-bottom-style: none;
 	border-bottom-style: solid;
 	border-width: medium;
