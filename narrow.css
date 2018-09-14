@@ -5,6 +5,11 @@ body {
 	font-size: 1.0em;
 }
 
+.download {
+	font-style: italic;
+	text-align: right;
+	padding: 0.8em;
+}
 
 .name {
 	font-size: 1.3em;
@@ -177,6 +182,16 @@ div.header > div.phone {
 .resumeGrid > .honors > div {
 		padding-bottom: 0.8em
 }
+
+
+.honor > .name {
+	font-size: 1.1em
+}
+
+.honor > .date {
+	font-style: italic;
+}
+
 .compact ul {
 	list-style: none;
 	display: inline-block;
