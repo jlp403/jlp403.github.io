@@ -1,7 +1,7 @@
 body {
 	font-family: Bookman, URW Bookman, serif;
 	width: 90%;
-	background-color: #fbd9b6;
+	background-color: #bab9c2;
 	font-size: 1.0em;
 }
 
@@ -42,7 +42,7 @@ body {
 	background-color: #f9fafd;
 	padding-left: 1em;
 	padding-right: 1em;
-	box-shadow: 2px 2px 2px #794006;
+	box-shadow: 2px 2px 2px #5e5c6b;
 	border-radius: 6px;
 	padding-top: 0.375em;
 	padding-bottom: 0.375em;
@@ -51,7 +51,7 @@ body {
 .resumeGrid > div > div:not(:last-child) {
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
-	border-bottom-color: #794006;
+	border-bottom-color: #5e5c6b;
 }
 
 .resumeGrid > div > div {
