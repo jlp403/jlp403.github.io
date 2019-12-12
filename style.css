@@ -16,6 +16,12 @@ body {
 	padding: 0.8em;
 }
 
+.backlink {
+	text-align: left;
+	font-size: 1.2em;
+	padding: 0.8em;
+}
+
 .resumeGrid {
 	display: grid;
 	grid-template-columns: 1fr 5fr;
